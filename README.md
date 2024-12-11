@@ -17,6 +17,7 @@ Use a code execution agent to run a code in autogen's collaborative setting. I h
 
   -- code executor -- upon approval of the coder's output by the reviewer, the executor runs the code and prints the execution result.
 
+-- chat manager -- calls on the agents based on the requirement. First, the coder is called on to synthesize a python code for the requested purpose. Upon completion of the code, the reviewer will review the code and suggest changes. If the code is good enough, it instructs the executor to run the program with the necessary arguments. Then the executor will print the output which will again be reviewed by the reviewer. If the output is not as instructed, the executor will be ordered to do it again with improvements by the reviewr.
 ### Files
 
   -- config.json -- configuration file for the llm_config parameter of the agents used in the group chat
