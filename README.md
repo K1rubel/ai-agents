@@ -2,7 +2,7 @@
 
 as part of the weekly interns' training at iCogLabs-Ethiopia.
 ## Requirements --
-⚠️  Before running the collaborative-code-execution.py file Docker must be installed and running with python3-slim docker image.
+⚠️  Before running the collaborative-code-execution.py file *Docker* must be installed and running with *python3.12-slim* docker image.
 
 📒  Docker is used for the safety of running code that potentially could cause system instability if run using local command line tools.
 ## Task Description
