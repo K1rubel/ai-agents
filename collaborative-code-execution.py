@@ -22,7 +22,7 @@ Focus on producing syntactically correct code. It's alright if there are a few m
 
 Avoid detailed explanations. Brief comments within the code will suffice.
 
-Do not include execution examples of the code.
+Do not include example execution of the code.
 
 If the Reviewer Agent provides feedback, make the necessary adjustments accordingly.
 '''
@@ -68,7 +68,7 @@ executor_agent = ConversableAgent(
 
 
 group_chat = GroupChat(
-    agents=[coder_agent, reviewer_agent, executor_agent],
+    agents=[user_proxy ,coder_agent, reviewer_agent, executor_agent],
     messages=[],
     send_introductions=True,
     max_round=6,
